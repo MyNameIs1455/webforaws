@@ -56,5 +56,7 @@ jobs:
         - name: Variable output2
           run: echo "${{env.Variable_level_Pipe}}"
 
+        - name: DOcker is here
+          run: docker ps
 
 
