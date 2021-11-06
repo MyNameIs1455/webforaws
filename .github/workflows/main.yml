@@ -51,8 +51,6 @@ jobs:
               echo "3333"
 
         - name: Variable output
-            run: |
-              echo "${{env.Variable_level_Pipe}}"
-              echo "${{env.Variable_level_job}}"
+          run: echo "${{env.Variable_level_job}}"
 
 
