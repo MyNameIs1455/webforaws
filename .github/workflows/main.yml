@@ -39,7 +39,7 @@ jobs:
       - name: DOcker build
         run: docker build .
 
-        - name: DOcker images
+      - name: DOcker images
         run: docker images
 
 
