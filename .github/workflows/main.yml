@@ -52,7 +52,7 @@ jobs:
 
         - name: Variable output
             run: |
-              echo "Variable_level_Pipe"
-              echo "Variable_level_job"
+              echo "${{Variable_level_Pipe}}"
+              echo "${{Variable_level_job}}"
 
 
