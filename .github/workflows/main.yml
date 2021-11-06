@@ -36,6 +36,9 @@ jobs:
       steps:
         # Runs a single command using the runners shell
         - name: Print message
-          run: echo $APP_NAME
+          run: |
+              echo 111111
+              echo 22222
+              echo 3333
 
 
