@@ -57,9 +57,12 @@ jobs:
           run: echo "${{env.Variable_level_Pipe}}"
 
         - name: DOcker is here
-          run: docker build -t testimage .
+          run: pwd
 
-        - name: DOcker is here
-          run: docker images
+   #     - name: DOcker is here
+    #      run: docker build -t testimage .
+
+    #    - name: DOcker is here
+     #     run: docker images
 
 
