@@ -59,8 +59,8 @@ jobs:
         - name: DOcker is here
           run: pwd
 
-   #     - name: DOcker is here
-    #      run: docker build -t testimage .
+        - name: DOcker is here
+          run: docker build -t testimage
 
     #    - name: DOcker is here
      #     run: docker images
