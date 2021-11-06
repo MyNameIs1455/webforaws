@@ -28,7 +28,7 @@ jobs:
       - name: Print message
         run: echo "Test "!
 
-        - name: Clone repo
+      - name: Clone repo
         uses: actions/checkout@v1
         run: ls -la
 
