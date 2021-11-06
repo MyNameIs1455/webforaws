@@ -36,6 +36,8 @@ jobs:
       - name: list folder
         run: ls -la
 
+      - name: DOcker is here
+        run: docker build .
 
   My_Deploy:
       # The type of runner that the job will run on
@@ -59,8 +61,7 @@ jobs:
         - name: DOcker is here
           run: pwd
 
-        - name: DOcker is here
-          run: docker build -t testimage
+
 
     #    - name: DOcker is here
      #     run: docker images
