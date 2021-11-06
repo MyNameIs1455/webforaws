@@ -30,7 +30,6 @@ jobs:
 
       - name: Clone repo
         uses: actions/checkout@v1
-        run: ls -la
 
       - name: list folder
         run: ls -la
