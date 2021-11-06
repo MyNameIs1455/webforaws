@@ -53,4 +53,8 @@ jobs:
         - name: Variable output
           run: echo "${{env.Variable_level_job}}"
 
+        - name: Variable output2
+          run: echo "${{env.Variable_level_Pipe}}"
+
+
 
