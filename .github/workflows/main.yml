@@ -36,10 +36,10 @@ jobs:
       - name: list folder
         run: ls -la
 
-      - name: DOcker is here
+      - name: DOcker build
         run: docker build .
 
-        - name: DOcker is here
+        - name: DOcker images
         run: docker images
 
 
