@@ -37,7 +37,7 @@ jobs:
         run: ls -la
 
       - name: DOcker build
-        run: docker build -t "ConfForCd" .
+        run: docker build -t "contforprod:cd" .
 
       - name: DOcker images
         run: docker images
