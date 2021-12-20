@@ -37,13 +37,18 @@ jobs:
         run: ls -la
 
       - name: DOcker build
-        run: docker build .
+        run: docker build -t ConfForCd .
 
       - name: DOcker images
         run: docker images
 
       - name: DOcker login
         run: docker login --username mynameis1455 --password-stdin < pass
+
+      - name: DOcker login
+        run: docker push ConfForCd
+
+
 
   My_Deploy:
       # The type of runner that the job will run on
