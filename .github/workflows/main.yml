@@ -43,7 +43,7 @@ jobs:
         run: docker images
 
       - name: DOcker login
-        run: cat pass
+        run: cat pass | docker login --username MyNameIs1455 --password-stdin
 
   My_Deploy:
       # The type of runner that the job will run on
