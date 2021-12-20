@@ -2,7 +2,7 @@
 
 name: CI
 env:
-      Variable_level_Pipe : PipeLevel
+      Variable_DockerHub : mynameis1455/cicd:latest
   
 # Controls when the workflow will run1
 on:
@@ -37,7 +37,7 @@ jobs:
         run: ls -la
 
       - name: DOcker build
-        run: docker build -t "mynameis1455/cicd:latest" .
+        run: docker build -t "${{env.Variable_DockerHub}}" .
 
       - name: DOcker images
         run: docker images
@@ -46,7 +46,7 @@ jobs:
         run: docker login --username mynameis1455 --password-stdin < pass
 
       - name: DOcker login
-        run: docker push mynameis1455/cicd:latest
+        run: docker push ${{env.Variable_DockerHub}}
 
 
 
