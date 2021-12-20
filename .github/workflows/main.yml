@@ -46,7 +46,7 @@ jobs:
         run: docker login --username mynameis1455 --password-stdin < pass
 
       - name: DOcker login
-        run: docker push ConfForCd
+        run: docker push contforprod:cd
 
 
 
