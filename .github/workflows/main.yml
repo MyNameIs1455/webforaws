@@ -37,7 +37,7 @@ jobs:
         run: ls -la
 
       - name: DOcker build
-        run: docker build -t "contforprod:cd" .
+        run: docker build -t "mynameis1455/cicd:latest" .
 
       - name: DOcker images
         run: docker images
@@ -46,7 +46,7 @@ jobs:
         run: docker login --username mynameis1455 --password-stdin < pass
 
       - name: DOcker login
-        run: docker push contforprod:cd
+        run: docker push mynameis1455/cicd:latest
 
 
 
