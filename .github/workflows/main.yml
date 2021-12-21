@@ -2,7 +2,7 @@
 
 name: CI
 env:
-      Variable_DockerHub : mynameis1455/cicd:latest
+      Variable_DockerHub : mynameis1455/cicd:v1
   
 # Controls when the workflow will run1
 on:
