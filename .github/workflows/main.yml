@@ -61,7 +61,7 @@ jobs:
           run: |
               echo "111111"
               echo "22222"
-              echo "3333"
+
 
         - name: Variable output
           run: echo "${{env.Variable_level_job}}"
